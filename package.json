@@ -1,0 +1,23 @@
+{
+  "name": "node.codedeploy.base",
+  "version": "0.1.0",
+  "description": "A basic Node.js/Express template optimized for AWS CodeDeploy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaaromy/node.codedeploy.base.git"
+  },
+  "author": "Jaaromy Zierse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaaromy/node.codedeploy.base/issues"
+  },
+  "homepage": "https://github.com/Jaaromy/node.codedeploy.base#readme",
+  "dependencies": {
+    "express": "4.15.2"
+  }
+}
