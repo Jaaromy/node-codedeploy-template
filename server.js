@@ -7,10 +7,6 @@ app.get('/', (req, resp) => {
 	resp.sendStatus(200);
 });
 
-app.get('/healthcheck', (req, resp) => {
-	resp.sendStatus(200);
-});
-
 app.all('/*', (req, resp) => {
 	resp
 		.status(200)
