@@ -1,0 +1,25 @@
+{
+	"apps": [
+		{
+			"name": "node.codedeploy.base",
+			"script": "server.js",
+			"instances": 0,
+			"exec_mode": "cluster",
+			"merge_logs": true,
+			"out_file": "NULL",
+			"env": {
+				"NODE_ENV": "dev",
+				"PORT": 3000
+			},
+			"env_qa": {
+				"NODE_ENV": "qa"
+			},
+			"env_stage": {
+				"NODE_ENV": "stage"
+			},
+			"env_production": {
+				"NODE_ENV": "production"
+			}
+		}
+	]
+}
