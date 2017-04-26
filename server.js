@@ -18,7 +18,7 @@ app.all('/*', (req, resp) => {
 						</head>
 						<body>
 						<h1>It worked! Yay!</h1>
-						<h2>This is dynamically generated.</h2>
+						<h2>Fuck you Justin!</h2>
 						<h2>Your path was: <code>${req.url}</code>
 						</h2>
 						<body>
