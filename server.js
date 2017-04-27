@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
 
+// Static pages will be served when root URI is requested
 app.use(express.static('public'));
 
-app.get('/', (req, resp) => {
-	resp.sendStatus(200);
-});
-
-app.all('/*', (req, resp) => {
+// All get requests other than root
+app.get('/*', (req, resp) => {
 	resp
 		.status(200)
 		.send(`
@@ -24,6 +22,13 @@ app.all('/*', (req, resp) => {
 						<body>
 						</html>
 					`);
+});
+
+// Catch all other requests
+app.all('/*', (req, resp) => {
+	resp
+		.status(404)
+		.send('Request type not supported.');
 });
 
 app.listen(3000, () => {
